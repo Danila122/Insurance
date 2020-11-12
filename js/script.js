@@ -45,10 +45,8 @@ $(document).ready(function () {
 	let selectCurrent = document.querySelector('.select__current')
 
 	selectHeader.addEventListener('click', () => {
-			selectBody.classList.toggle('active')
-		})
-	
-	
+		selectBody.classList.toggle('active')
+		
 		selectItem.forEach(item => {
 			item.addEventListener('click',selectChoose)
 		})
@@ -58,6 +56,10 @@ $(document).ready(function () {
 			selectCurrent.innerText = text;
 			selectBody.classList.remove('active')
 		}
+	})
+	
+	
+		
 	
 //=============================================================================================
 	
@@ -73,7 +75,7 @@ $('.main-screen__slider').slick({
 	dogs: false,
 	swipe: true,
 	waitForAnimate: true,
-	mobileFirst: true,
+	mobileFirst: false,
 	speed: 900,
 	infinite: true,
 	autoplay: true,
@@ -90,7 +92,7 @@ $('.main-screen__slider').slick({
 		dogs: false,
 		swipe: true,
 		waitForAnimate: true,
-		mobileFirst: true,
+		mobileFirst: false,
 		speed: 900,
 		infinite: true,
 		autoplay: true,
@@ -106,7 +108,7 @@ $('.main-screen__slider').slick({
 		pauseOnHover: true,
 		swipe: true,
 		waitForAnimate: true,
-		mobileFirst: true,
+		mobileFirst: false,
 		speed: 900,
 		infinite: false,
 		touchMove: true,

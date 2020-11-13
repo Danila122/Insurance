@@ -39,48 +39,24 @@ $(document).ready(function () {
 	
 //========================================================================================================================
 
-	// let selectBody = document.querySelector('.select__body')
-	// let selectHeader = document.querySelector('.select__header')
-	// let selectItem = document.querySelectorAll('.select__item')
-	// let selectCurrent = document.querySelector('.select__current')
-
-	// selectHeader.addEventListener('click', () => {
-	// 	selectBody.classList.toggle('active')
-		
-	// 	selectItem.forEach(item => {
-	// 		item.addEventListener('click',selectChoose)
-	// 	})
-	
-	// 	function selectChoose() {
-	// 		let text = this.innerText
-	// 		selectCurrent.innerText = text;
-	// 		selectBody.classList.remove('active')
-	// 	}
-	// })
-	
-	
-		
-	
-//=============================================================================================
-	
 	$('.header__burger').click(function () {
 		$('.header__burger,.header__menu, select').toggleClass('active');
 		$('body').toggleClass('lock')
-		$('.select__body').toggleClass('active-burger')
 	});
+
 
 //======================================================================================================================
 
 $('.main-screen__slider').slick({
+	//arrows: false,
 	dogs: false,
 	swipe: true,
 	waitForAnimate: true,
-	mobileFirst: false,
+	mobileFirst: true,
 	speed: 900,
 	infinite: true,
 	autoplay: true,
 	autoplaySpeed: 2000,
-	touchMove: true,
 	prevArrow: $('.slick-prev'),
 	nextArrow: $('.slick-next'),
 })	
@@ -96,8 +72,7 @@ $('.main-screen__slider').slick({
 		speed: 900,
 		infinite: true,
 		autoplay: true,
-		autoplaySpeed: 2000,
-		touchMove: true,
+ 		autoplaySpeed: 2000,
 	})	
 
 //=====================================================================================================================================
@@ -111,10 +86,9 @@ $('.main-screen__slider').slick({
 		mobileFirst: false,
 		speed: 900,
 		infinite: false,
-		touchMove: true,
-	})
-	
-//=======================================================================================================================================
+		
+})
+//===============================================================================================================================================
 	
 	$('.list__slider').slick({
 		infinite: false,
@@ -129,7 +103,7 @@ $('.main-screen__slider').slick({
 		adaptiveHeight: true, 
 	})
 	
-	//TABS================================================================================================================================
+	//TABS================================================================================================================================================
 	
 	$('.tab').click(function (e) {
 		e.preventDefault();

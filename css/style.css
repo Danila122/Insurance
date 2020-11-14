@@ -5,7 +5,7 @@
 400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -144,35 +144,88 @@ h6 {
   transition: all 0.3s linear;
 }
 
-.header__row1 select {
-  border: none;
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-.header__row1 select.active {
-  background-color: #E5E5E5;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
 .header__languages {
-  z-index: 11;
+  z-index: 12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Source Sans Pro";
 }
 
 .header__languages p {
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0px 10px 0px 0px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.header__languages .select {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+}
+
+.header__languages .select__header {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95px;
+}
+
+.header__languages .select__current {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.header__languages .select__icon {
+  height: 5px;
+  width: 9px;
+  margin: 0px 0px -2px 0px;
+}
+
+.header__languages .select__icon img {
+  width: 100%;
+}
+
+.header__languages .select__body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  display: none;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  z-index: 67;
+  background-color: #fff;
+}
+
+.header__languages .select__body.active {
+  display: block;
+}
+
+.header__languages .select__body.active-burger {
+  background-color: #E5E5E5;
+}
+
+.header__languages .select__item {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 5px 0 5px 0;
 }
 
 .header__eye {
@@ -182,6 +235,7 @@ h6 {
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  z-index: 11;
 }
 
 .header__phone-list {
@@ -745,7 +799,7 @@ h6 {
 .main-screen .arrow-slick {
   position: absolute;
   z-index: 2;
-  top: 55%;
+  top: 52%;
   width: 70px;
   display: -webkit-box;
   display: -ms-flexbox;

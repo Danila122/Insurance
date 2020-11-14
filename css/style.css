@@ -2957,6 +2957,16 @@ h6 {
   width: 100%;
 }
 
+@media (max-width: 1270px) {
+  .directions__slider .slick-arrow.slick-prev {
+    left: 15px;
+  }
+
+  .directions__slider .slick-arrow.slick-next {
+    right: 15px;
+  }
+}
+
 @media (max-width: 1182px) {
   .container {
     max-width: 970px;
@@ -3066,14 +3076,6 @@ h6 {
   .directions__slider {
     margin: -70px 0px 0px 0px;
     bottom: -70px;
-  }
-
-  .directions__slider .slick-arrow.slick-prev {
-    left: 15px;
-  }
-
-  .directions__slider .slick-arrow.slick-next {
-    right: 15px;
   }
 
   .directions-row__column {

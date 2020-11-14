@@ -26,31 +26,6 @@ $(document).ready(function () {
 
 	//==================================================================================================
 	
-	let selectHeader = document.querySelector('.select__header')
-	let selectBody = document.querySelector('.select__body')
-	let selectItem = document.querySelectorAll('.select__item')
-	let selectCurrent = document.querySelector('.select__current')
-	
-	selectHeader.addEventListener('click', () => {
-		selectBody.classList.toggle('active')
-
-		selectItem.forEach(item => {
-			item.addEventListener('click', selectChoose)
-		})
-
-		function selectChoose() {
-			let text = this.innerText;
-			selectCurrent.innerText = text
-			selectBody.classList.remove('active')
-			
-
-		}
-	})
-
-	
-
-	
-
 	
 //========================================================================================================================
 

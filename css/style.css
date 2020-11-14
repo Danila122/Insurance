@@ -166,6 +166,8 @@ h6 {
 }
 
 .header__languages .select {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
   font-family: 'Source Sans Pro', sans-serif;
   position: relative;
 }

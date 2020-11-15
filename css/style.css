@@ -154,6 +154,22 @@ h6 {
           align-items: center;
 }
 
+.header__languages select {
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.header__languages select.active-burger {
+  background-color: #E5E5E5;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
 .header__languages p {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0px 10px 0px 0px;
@@ -199,25 +215,6 @@ h6 {
 
 .header__languages .select__icon img {
   width: 100%;
-}
-
-.header__languages .select__body {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  display: none;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  z-index: 67;
-  background-color: #fff;
-}
-
-.header__languages .select__body.active {
-  display: block;
-}
-
-.header__languages .select__body.active-burger {
-  background-color: #E5E5E5;
 }
 
 .header__languages .select__item {
